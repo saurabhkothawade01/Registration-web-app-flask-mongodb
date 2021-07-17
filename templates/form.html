@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('library.jpg');
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Add padding to containers */
+        .container {
+            width: 40%;
+            padding: 24px;
+            background-color: white;
+        }
+
+        /* Full-width input fields */
+        input[type=text],
+        input[type=email] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=email]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        /* Overwrite default styles of hr */
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        /* Set a style for the submit button */
+        .registerbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .registerbtn:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <form action='/mongodb' method='GET'>
+        <center>
+            <div class="container">
+                <h1>Register</h1>
+                <hr>
+                <label for="name"><b>Student Name</b></label>
+                <input type="text" placeholder="Enter Student Name" name="sname" id="sname" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email Id" name="email" id="email" required>
+
+                <label for="add"><b>Address</b></label>
+                <input type="text" placeholder="Enter Student Address" name="add" id="add">
+
+                <label for="mobile"><b>Mobile No.</b></label>
+                <input type="text" placeholder="Enter Student Mobile no." name="mobile" id="mobile">
+
+                <label for="class"><b>Class</b></label>
+                <input type="text" placeholder="Enter Student Class" name="class" id="class">
+                <hr>
+
+
+                <button type="submit" class="registerbtn">Register</button>
+            </div>
+
+    </form>
+
+</body>
+
+</html>
